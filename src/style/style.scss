@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+body {
+  //font-family: 'Roboto', sans-serif;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+
+}
