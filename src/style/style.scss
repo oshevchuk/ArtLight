@@ -40,7 +40,9 @@
 .col-6{
   width: 50%;
 }
-
+.col-4{
+  width: 33%;
+}
 .col-5{
   width: 41.6%;
 }
@@ -967,6 +969,57 @@ h2.active{
   }
   footer{
     background-color: #141515;
+    color: white;
+    padding: 40px 0;
+    font-size: 12px;
+
+    p{
+      color: white;
+      margin: 5px 0;
+      font-size: 12px;
+    }
+    .row{
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .phones{
+      font-size: 22px;
+      img{
+        margin-right: 14px;
+      }
+    }
+    .addr{
+      width: 66%;
+    }
+    .bottom{
+      margin-top: 45px;
+    }
+  }
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #898989;
+    transition: 0.2s;
+    margin: 0 5px;
+    i{
+      color: black;
+      font-size: 16px;
+    }
+    &:hover{
+      background-color: #3a497c;
+    }
   }
 }
 
