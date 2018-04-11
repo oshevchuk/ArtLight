@@ -1,0 +1,70 @@
+.head_main{
+  min-height: 657px;
+  background-image: url("../img/main_head_groud.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .container{
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .title{
+    display: inline-block;
+    text-align: right;
+    font-weight: 200;
+    font-size: 72px;
+    font-family: 'Proxima Nova Th';
+    color: #ffffff;
+    line-height: 70.89px;
+    b{
+      display: block;
+      font-size: 105px;
+      color: #ffffff;
+      line-height: 90px;
+      font-family: 'Proxima Nova Bl';
+    }
+
+    & ~ p{
+      margin: 0;
+      font-family: 'Proxima Nova Th';
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: 100;
+      line-height: 27px;
+      b{
+        color: #141515;
+        font-weight: 600;
+      }
+    }
+  }
+  .our_perv{
+    padding-top: 40px;
+  }
+  .our_perv .items{
+    width: auto;
+    display: inline-flex;
+
+    &>div p{
+      text-transform: none;
+      color: #ffffff;
+      &:first-letter{
+        text-transform: capitalize;
+      }
+    }
+  }
+  .btn{
+    font-size: 16px;
+    font-family: 'Proxima Nova Th';
+    font-weight: 400;
+    background-color: #141515;
+    padding: 20px 39px;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 60px;
+  }
+}
