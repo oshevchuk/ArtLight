@@ -1058,8 +1058,27 @@ h2.active{
   }
 }
 
+.center{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+a.show{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f17e00;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #f17e00;
+  padding: 16px 31px;
+  text-transform: uppercase;
+}
 
 @import "head_main";
+
 
 @media screen and (max-width: 450px) {
 
