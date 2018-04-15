@@ -911,7 +911,7 @@ h2.active{
   letter-spacing: 1.02px;
   text-align: center;
   position: relative;
-  margin: 60px 0 30px;
+  margin: 60px 0 64px;
 
   &:after{
     content: '';
@@ -1159,6 +1159,127 @@ a.show{
     height: 6px;
     border-radius: 50%;
     background-color: #141515;
+  }
+}
+
+.skew_grey {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    -moz-transform: skew(0deg, 7deg);
+    -webkit-transform: skew(0deg, 7deg);
+    -o-transform: skew(0deg, 7deg);
+    -ms-transform: skew(0deg, 7deg);
+    transform: skew(0deg, 7deg);
+    background-color: #f1f1f1;
+  }
+  .content{
+    width: 90%;
+    margin: auto;
+    .row{
+      margin-top: 60px;
+    }
+    .video{
+      img{
+        width: calc(100% - 20px);
+        height: 100%;
+        object-fit: cover;
+        border: 8px solid #dfdfdf;;
+      }
+    }
+    .text{
+      padding-left: 57px;
+      p{
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.text-col-4{
+  text-align: justify;
+  justify-content: space-between;
+  &>div{
+    width: calc(25% - 12px);
+  }
+}
+
+.carousel_{
+  position: relative;
+  .contents{
+    margin-top: 64px;
+    justify-content: space-between;
+    display: flex;
+    img{
+      width: calc(25% - 10px);
+    }
+  }
+  .prev{
+    position: absolute;
+    left: -70px;
+    top: calc(50% - 20px);
+  }
+  .next{
+    position: absolute;
+    right: -70px;
+    top: calc(50% - 20px);
+  }
+}
+
+.number-list{
+  list-style: none;
+  counter-reset: badass-counter;
+  margin-top: 60px;
+  li{
+    display: block;
+    max-width: 620px;
+    margin: auto;
+    position: relative;
+    min-height: 40px;
+    p{
+      margin: 24px 0;
+    }
+  }
+  li:before{
+    content: counter(badass-counter, decimal-leading-zero);
+    counter-increment: badass-counter;
+    font-size: 39px;
+    font-weight: 400;
+    color: #f17e00;
+    font-family: "Proxima Nova Th";
+    position: absolute;
+    line-height: 39px;
+    left: -80px;
+    top:0;
+  }
+}
+
+.etaps{
+  .row{
+    &>div{
+      width: 50%;
+      p{
+        display: inline-block;
+        min-width: 260px;
+      }
+    }
+    &:nth-child(odd){
+      text-align: right;
+      padding-right: 100px;
+    }
+    &:nth-child(even){
+      text-align: left;
+      padding-left: 100px;
+    }
   }
 }
 
