@@ -159,6 +159,7 @@ header{
         background-color: rgba(20,20,20,0.85);
         width: 522px;
         top: 62px;
+        z-index: 1000;
         li{
           display: block;
           width: calc(50% - 4px);
@@ -946,6 +947,10 @@ h2.active{
       }
     }
   }
+  .center{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .clients{
@@ -1075,10 +1080,87 @@ a.show{
   border: 1px solid #f17e00;
   padding: 16px 31px;
   text-transform: uppercase;
+  transition: 0.2s;
+  &:hover{
+    background-color: #f17e00;
+    color: white;
+  }
 }
+
+
 
 @import "head_main";
 
+.skew{
+  position: relative;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  &:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    -moz-transform: skew(0deg, 7deg);
+    -webkit-transform: skew(0deg, 7deg);
+    -o-transform: skew(0deg, 7deg);
+    -ms-transform: skew(0deg, 7deg);
+    transform: skew(0deg, 7deg);
+    background-color: #f17e00;
+  }
+  a.show{
+    color: #ffffff;
+    border: 1px solid white;
+    transition: 0.2s;
+    &:hover{
+      cursor: pointer;
+      background-color: white;
+      color: black;
+    }
+  }
+  .our_perv{
+    h2.active{
+      color: white;
+      &:after{
+        background-color: #141515;
+      }
+    }
+    p{
+      color: white;
+    }
+    p.active{
+      color: #141515;
+    }
+  }
+}
+
+.pre_order{
+  text-align: center;
+  h4{
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  p{
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  p:before{
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 2px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #141515;
+  }
+}
 
 @media screen and (max-width: 450px) {
 
