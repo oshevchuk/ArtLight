@@ -1618,6 +1618,47 @@ a.show{
   margin: auto;
 }
 
+.way{
+  display: block;
+  max-width: 600px;
+  margin: auto;
+  p{
+    text-transform: uppercase;
+  }
+  ul{
+    list-style: none;
+    padding-left: 10px;
+    li{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        left: -20px;
+        top: calc(50% - 3px);
+        background-color: #f17e00;
+        border-radius: 50%;
+      }
+      a{
+        color: #141515;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        &:hover{
+          color: #f17e00;
+          text-decoration: underline;
+        }
+      }
+      &.active a{
+        color: #f17e00;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
 
 }
