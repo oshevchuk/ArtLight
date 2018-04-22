@@ -1555,12 +1555,14 @@ a.show{
   counter-reset: num-counter;
   li{
     display: flex;
-    margin: 5px;
+    align-items: center;
+    //margin: 4px;
     position: relative;
     font-size: 15px;
-    padding-left: 40px;
+    letter-spacing: -0.4px;
+    //padding-left: 40px;
     &:before{
-      position: absolute;
+      //position: absolute;
       content: counter(num-counter, decimal);
       counter-increment: num-counter;
       font-size: 45px;
@@ -1570,6 +1572,9 @@ a.show{
       line-height: 45px;
       left: 0;
       top: calc(50% - 22px);
+      text-align: right;
+      padding-right: 10px;
+      //min-width: 27px;
     }
   }
 }
@@ -1605,6 +1610,12 @@ a.show{
       text-decoration: underline;
     }
   }
+}
+
+.imageInText{
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 @media screen and (max-width: 450px) {
