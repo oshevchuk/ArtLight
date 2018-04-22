@@ -282,6 +282,9 @@ ul.navigation{
 
 .main{
   width: 100%;
+  &> p:first-letter{
+    padding-left: 10px;
+  }
 }
 .content{
   margin-left: 14px;
@@ -917,7 +920,7 @@ h2.active{
   letter-spacing: 1.02px;
   text-align: center;
   position: relative;
-  margin: 60px 0 64px;
+  margin: 60px 0 44px;
 
   &:after{
     content: '';
@@ -1656,6 +1659,54 @@ a.show{
         text-decoration: underline;
       }
     }
+  }
+}
+
+.models{
+  .item{
+    margin: 15px 0;
+  }
+
+  .image{
+    min-width: 240px;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  h3.active{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .col-6{
+    width: calc(50% - 5px);
+  }
+  p{
+    font-size: 14px;
+    b{
+      font-size: 15px;
+    }
+  }
+  .price{
+    p{
+      margin: 10px 0;
+    }
+    span{
+      font-size: 18px;
+      color: #f17e00;
+      b{
+        font-family: "Proxima Nova Bl";
+        letter-spacing: 0.5px;
+        font-size: 18px;
+      }
+    }
+  }
+  i.active{
+    font-size: 14px;
+    color: #f17e00;
   }
 }
 
