@@ -1574,6 +1574,39 @@ a.show{
   }
 }
 
+.three-col{
+  margin-top: 60px;
+  .imgGallery .item{
+    width: calc(33% - 7px);
+  }
+}
+.paginator{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+  padding: 0;
+  li{
+    display: block;
+    min-width: 16px;
+    text-align: center;
+    a{
+      font-size: 12px;
+      color: #f17e00;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+  li:hover, li.current{
+    a{
+      font-size: 16px;
+      color: #141515;
+      text-decoration: underline;
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
 
 }
