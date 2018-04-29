@@ -126,9 +126,10 @@ header{
     list-style: none;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 0px;
     li{
       display: block;
-      margin: 18px 0 19px 0;
+      padding: 18px 0 19px 0;
       position: relative;
       padding-right: 17px;
       &:after{
@@ -139,8 +140,9 @@ header{
         height: 3px;
         position: absolute;
         right: 0;
-        top: 9px;
+        top: 27px;
       }
+
       a{
         text-decoration: none;
         font-weight: 300;
@@ -164,7 +166,7 @@ header{
         padding: 14px 28px;
         background-color: rgba(20,20,20,0.85);
         width: 522px;
-        top: 62px;
+        top: 80px;
         z-index: 1000;
         li{
           display: block;
@@ -185,6 +187,11 @@ header{
             font-size: 13px;
             color: white;
           }
+        }
+      }
+      &.right-align{
+        .submenu {
+          right: 0px;
         }
       }
       &:hover{
