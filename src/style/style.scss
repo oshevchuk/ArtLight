@@ -272,8 +272,20 @@ ul.navigation{
         color: white;
       }
       &.active{
-        a{
+        & > a{
           color: #141515;
+        }
+      }
+      ul{
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        li{
+          padding: 4px 0;
+          a{
+            font-size: 12px;
+            line-height: 15px;
+          }
         }
       }
     }
