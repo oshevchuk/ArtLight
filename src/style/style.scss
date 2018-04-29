@@ -59,8 +59,19 @@
 .black{
   background-color: black;
   color: white;
+  fill: black;
 }
-
+.white{
+  color: white;;
+  fill: #f9e9d8;
+}
+.orange{
+  fill:#EF7F1A;
+}
+.darkness{
+  fill: #493723;
+  color: #493723;
+}
 body {
   font-family: "Proxima Nova Rg";
   margin: 0;
@@ -981,6 +992,7 @@ h2.active{
   }
 }
 
+
 .textedItems{
   margin: auto;
   display: flex;
@@ -1454,6 +1466,7 @@ a.show{
 @import "gallery";
 
 .videoDesc{
+  padding-top: 5px;
   .row:nth-child(even){
     flex-direction: row-reverse;
   }
@@ -1477,6 +1490,9 @@ a.show{
     margin-left: 60px;
   }
   p{
+    &:first-letter{
+      padding-left: 10px;
+    }
     margin: 0 40px;
     text-align: inherit;
   }
@@ -1514,6 +1530,12 @@ a.show{
   &>div p{
     font-size: 12px;
     text-transform: none;
+  }
+  &.upper {
+    &>div p {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -1729,6 +1751,12 @@ a.show{
   }
 }
 
-@media screen and (max-width: 450px) {
-
+h2.activeInvert{
+  color: #141515 !important;
+  &:after{
+    background-color: white !important;
+  }
 }
+
+@import "responsive";
+
