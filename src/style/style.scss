@@ -1284,6 +1284,7 @@ a.show{
     margin-top: 64px;
     justify-content: space-between;
     display: flex;
+    align-items: flex-start;
     img{
       width: calc(25% - 10px);
     }

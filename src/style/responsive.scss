@@ -2,6 +2,88 @@
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 450px) {
+.menukiller{
+  display: none;
+}
+.menu_switch{
+  //display: none;
+  position: absolute;
+  right: 20px;
+  bottom: 60px;;
+  z-index: 10000;
+  label{
+    display: flex;
+    flex-direction: column;
+    span{
+      display: block;
+      width: 24px;
+      height: 4px;
+      background-color: white;
+      z-index: 10000;
+      margin-bottom: 6px;
+    }
+  }
+}
 
+@media screen and (max-width: 900px) {
+  header{
+    position: relative;
+    .container.r_top{
+      padding: 0;
+    }
+    .container.r_top:nth-of-type(1){
+      position: absolute;
+      width: auto;
+      right: 20px;
+      top: 20px;;
+      ul.cities{
+        display: none;
+      }
+      .language{
+        position: relative;
+        right: auto;
+        top:auto;
+        font-size: 13px;
+      }
+    }
+    .container.r_top:nth-of-type(2){
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &>div:nth-of-type(1){
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        img{
+          padding-left: 20px;
+        }
+      }
+      &>div:nth-of-type(2){
+        background-color: black;
+        color: white;
+        min-height: 70px;
+        padding-left: 20px;
+      }
+      .miniLogo{
+        position: absolute;
+        right: 20px;
+        bottom: 80px;
+      }
+    }
+    .col-6{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container{
+    background-color: red;
+  }
 }
