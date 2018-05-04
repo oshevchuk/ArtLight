@@ -485,6 +485,14 @@
   .videoDesc p{
     margin: 0;
   }
+  .footer .subscribe button{
+    font-size: 2.2vw;
+  }
+
+  .footer .subscribe input{
+    max-width: 100%;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -523,4 +531,5 @@
   //.navigation{
   //  display: none;
   //}
+
 }
