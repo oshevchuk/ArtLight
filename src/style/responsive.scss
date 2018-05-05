@@ -1,5 +1,5 @@
 .container{
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 .menukiller{
@@ -107,7 +107,10 @@
           }
           .submenu{
             position: inherit;
+            padding: 0;
+            padding-left: 15px;
             top:0;
+            background-color: black;;
           }
         }
       }
@@ -492,6 +495,15 @@
   .footer .subscribe input{
     max-width: 100%;
     width: 90%;
+  }
+  .inline-row{
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    select{
+      margin-right: 15px;
+    }
   }
 }
 
